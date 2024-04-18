@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>bubbling-capturing</title>
+  <style>
+    div {
+      min-width: 100px;
+      min-height: 200px;
+      padding: 50px;
+      border: 1px solid black;
+    }
+  </style>
+</head>
+<body>
+    <div id="grandParent">
+      <div id="parent">
+        <div id="child">
+          <label for="name">Enter Name</label>
+          <input id="name-input" name="name" type="text"/>
+          <button onclick="addName()">Add Name</button>
+          <ul id="parent-list">
+            <li>Rishabh</li>
+            <li>Rishav</li>
+            <li>Shruti</li>
+            <li>Saarthak</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  <!-- <script src="./debounce.js"></script> -->
+  <script src="./bubbling-capturing.js"></script>
+  <!-- <script src="./eventDelegation.js"></script> -->
+  <!-- <script src="./prototype.js"></script> -->
+  <!-- <script src="./dynamicElement.js"></script> -->
+
+</body>
+</html>
